@@ -10,6 +10,7 @@ class RegisterForm extends React.Component {
     this.state = {
       error: '',
       username: '',
+      name: '',
       password: '',
       email: '',
     };
@@ -27,6 +28,7 @@ class RegisterForm extends React.Component {
     event.preventDefault();
     registerUser(userPool, config, this.state.username, this.state.password, {
       email: this.state.email,
+      name: this.state.name
     }).then(
       (action) => {
         store.dispatch(action);
@@ -37,6 +39,10 @@ class RegisterForm extends React.Component {
 
   changeUsername = (event) => {
     this.setState({ username: event.target.value });
+  }
+
+  changeName = (event) => {
+    this.setState({ name: event.target.value });
   }
 
   changePassword = (event) => {
@@ -53,6 +59,10 @@ class RegisterForm extends React.Component {
       <label>
         Username
         <input placeholder="username" onChange={this.changeUsername} required />
+      </label>
+      <label>
+        Username
+        <input placeholder="name" onChange={this.changeName} required />
       </label>
       <label>
         Password
