@@ -1,7 +1,6 @@
 {
-  "region": "",
-  "userPool": "",
-  "identityPool": "",
-  "clientId": "",
+  "region": "us-east-1",
+  "userPool": "us-east-1_q8ESh3Bp5",
+  "identityPool": "us-east-1:3090d651-69d2-48a3-b366-647ff3e2d363",
+  "clientId": "5vdctrsa6lhvcqu99pnffu1ch7"
 }
-

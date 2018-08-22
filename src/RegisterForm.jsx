@@ -35,7 +35,7 @@ class RegisterForm extends React.Component {
         this.props.history.push('/');
       },
       error => this.setState({ error }));
-  }
+  };
 
   changeUsername = (event) => {
     this.setState({ username: event.target.value });
@@ -61,7 +61,7 @@ class RegisterForm extends React.Component {
         <input placeholder="username" onChange={this.changeUsername} required />
       </label>
       <label>
-        Username
+        Name
         <input placeholder="name" onChange={this.changeName} required />
       </label>
       <label>
